@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "lavaclient",
+  "version": "${version}",
+  "name": "Lava Client",
+  "description": "A feature-rich Minecraft client mod with Lava aesthetics for Fabric 1.21.5",
+  "authors": ["LavaClient Team"],
+  "contact": {
+    "homepage": "https://lavaclient.de",
+    "sources": "https://github.com/lavaclient/lava-client"
+  },
+  "license": "MIT",
+  "icon": "assets/lavaclient/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["de.lavaclient.LavaClient"],
+    "client": ["de.lavaclient.LavaClientClient"]
+  },
+  "mixins": ["lavaclient.mixins.json"],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
